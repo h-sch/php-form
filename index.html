@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    </head>
+    <body>
+
+       <form id="vm_contact_form" method="POST" action="forms/contact-form/vn.contact.php">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" name="contact_name" placeholder="Name" value="" required />
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" name="contact_email" placeholder="Email" value="" required />
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="ctsubject" name="contact_subject" placeholder="Subject" value="" required />
+            </div>
+            <div class="form-group">
+                <textarea cols="5" rows="7" class="form-control" id="message" name="contact_message" placeholder="Message" required></textarea>
+            </div>
+            <div class="contact-btn-contain">
+                <button class="btn-contact" type="submit" id="vm_contact_button" name="submit">Send <span class="btn-contact-icn">→</span></button>
+            </div>
+            <p class="success hidden"></p>
+        </form> 
+      
+        <script src="js/plugins/jquery/jquery-2.2.4.min.js"></script>
+        <script src="forms/assets/js/jquery.form.min.js"></script>
+        <script src="forms/assets/js/jquery.validate.min.js"></script>
+        <script src="forms/assets/js/vm.jquery.js"></script>
+     
+    </body>
+</html>
